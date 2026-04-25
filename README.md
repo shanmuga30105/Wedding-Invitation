@@ -11,3 +11,25 @@ A beautifully designed Wedding Invitation Web Application that allows couples to
 *CSS3 – Styling & animations
 
 *JavaScript – Interactivity
+
+✨ Features :
+
+🎉 Elegant landing page with wedding details
+
+
+❤️ “Our Story” section for the couple
+
+
+📅 Wedding events timeline (Engagement, Mehendi, Sangeet, Wedding)
+
+
+📍 Venue location with Google Maps integration
+
+
+💌 RSVP form for guest confirmation
+
+
+🌸 Animated falling petals for a festive feel
+
+
+📱 Fully responsive design (mobile-friendly)
