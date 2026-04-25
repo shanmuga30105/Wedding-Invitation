@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Wedding Invitation</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #5b0d0d;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(91,13,13,0.8), rgba(91,13,13,0.8)),
+              url('https://images.unsplash.com/photo-1519741497674-611481863552');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+  color: gold;
+  margin: 10px 0;
+}
+
+.hero h2 {
+  margin-top: 10px;
+}
+
+/* STORY */
+.story {
+  background: #f5e9c9;
+  color: #333;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.story-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.person img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.heart {
+  font-size: 40px;
+  color: red;
+}
+
+/* EVENTS */
+.events {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.event {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid gold;
+  max-width: 400px;
+}
+
+.highlight {
+  background: gold;
+  color: black;
+}
+
+/* BLESSINGS */
+.blessings {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  background: #f5e9c9;
+  color: black;
+}
+
+.left, .right {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+}
+
+/* RSVP */
+.rsvp {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+input, select {
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  background: gold;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+}
+
+/* Petals Animation */
+.petal {
+  position: fixed;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  background: pink;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+</style>
+
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h3>Together with our families</h3>
+    <h1>Aarav & Diya</h1>
+    <p>Invite you to join us in the celebration of our love</p>
+    <h2>December 12, 2026</h2>
+    <span>Udaipur, Rajasthan</span>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story">
+  <h2>Our Story</h2>
+  <div class="story-container">
+    <div class="person">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg">
+      <h3>Aarav</h3>
+      <p>"The moment I saw her, I knew my search was over."</p>
+    </div>
+
+    <div class="heart">❤</div>
+
+    <div class="person">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg">
+      <h3>Diya</h3>
+      <p>"In him, I found my love, my best friend, and my home."</p>
+    </div>
+  </div>
+
+  <p>
+    Love is not just about finding the right person, but creating the right relationship.
+    We are starting our forever, and we want you to be part of it.
+  </p>
+</section>
+
+<!-- EVENTS -->
+<section class="events">
+  <h2>Wedding Events</h2>
+
+  <div class="event">
+    <h3>Engagement</h3>
+    <p>Dec 10, 2026 | 7:00 PM</p>
+  </div>
+
+  <div class="event">
+    <h3>Mehendi Ceremony</h3>
+    <p>Dec 11, 2026 | 11:00 AM</p>
+  </div>
+
+  <div class="event">
+    <h3>Sangeet Night</h3>
+    <p>Dec 11, 2026 | 8:00 PM</p>
+  </div>
+
+  <div class="event highlight">
+    <h3>The Wedding</h3>
+    <p>Dec 12, 2026 | 5:00 PM</p>
+  </div>
+</section>
+
+<!-- BLESSINGS -->
+<section class="blessings">
+  <div class="left">
+    <h2>Blessings From</h2>
+    <p><strong>Groom’s Parents:</strong> Mr. Rajesh & Mrs. Sunita Sharma</p>
+    <p><strong>Bride’s Parents:</strong> Mr. Vikram & Mrs. Anjali Mehta</p>
+  </div>
+
+  <div class="right">
+    <h2>Venue</h2>
+    <iframe 
+      src="https://maps.google.com/maps?q=udaipur&t=&z=13&ie=UTF8&iwloc=&output=embed">
+    </iframe>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section class="rsvp">
+  <h2>RSVP</h2>
+  <form id="rsvpForm">
+    <input type="text" placeholder="Full Name" required><br>
+    
+    <select>
+      <option>1 Guest</option>
+      <option>2 Guests</option>
+      <option>3 Guests</option>
+    </select><br>
+
+    <label><input type="radio" name="attend" checked> Accept</label>
+    <label><input type="radio" name="attend"> Decline</label><br><br>
+
+    <button type="submit">Send Confirmation</button>
+  </form>
+</section>
+
+<footer>
+  <h3>Aarav & Diya</h3>
+  <p>#AaravDiyaWedding</p>
+</footer>
+
+<script>
+// RSVP
+document.getElementById("rsvpForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Thank you for your response!");
+});
+
+// Falling petals animation
+function createPetal() {
+  const petal = document.createElement("div");
+  petal.classList.add("petal");
+
+  petal.style.left = Math.random() * window.innerWidth + "px";
+  petal.style.animationDuration = (3 + Math.random() * 5) + "s";
+
+  document.body.appendChild(petal);
+
+  setTimeout(() => {
+    petal.remove();
+  }, 8000);
+}
+
+setInterval(createPetal, 300);
+</script>
+
+</body>
+</html>
