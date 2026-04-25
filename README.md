@@ -33,3 +33,12 @@ A beautifully designed Wedding Invitation Web Application that allows couples to
 
 
 📱 Fully responsive design (mobile-friendly)
+
+🚀 Getting Started
+
+1. Clone the repository
+git clone https://github.com/your-username/wedding-invitation.git
+
+2. Open the project
+
+Simply open index.html in your browser.
